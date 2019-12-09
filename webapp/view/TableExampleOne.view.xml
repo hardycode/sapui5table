@@ -1,9 +1,12 @@
 <mvc:View controllerName="com.hardy.sapui5table.controller.TableExampleOne" xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
 	xmlns:core="sap.ui.core" xmlns="sap.m">
 	<Shell id="shell">
-		<App id="app">
+		<App>
 			<pages>
-				<Page id="page" title="{i18n>title}">
+				<Page id="page" title="{i18n>tblexmptitle}" class="sapUiContentPadding" titleLevel="H3" showNavButton="true" navButtonPress="onPressBack">
+					<headerContent>
+						<Button icon="sap-icon://home"></Button>
+					</headerContent>
 					<content>
 						<Table id="table1" growing="true" growingThreshold="10" mode="MultiSelect" items="{/}">
 							<headerToolbar>

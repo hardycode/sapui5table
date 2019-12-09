@@ -1,6 +1,7 @@
 sap.ui.define([
-	"sap/ui/core/mvc/Controller"
-], function (Controller) {
+	"sap/ui/core/mvc/Controller",
+	"sap/ui/core/routing/History"
+], function (Controller, History) {
 	"use strict";
 
 	return Controller.extend("com.hardy.sapui5table.controller.TableExampleOne", {
@@ -66,6 +67,22 @@ sap.ui.define([
 				sap.ui.model.FilterOperator.Contains, sValue
 			);
 			evt.getSource().getBinding("items").filter([oFilter]);
+		},
+
+		// ********************** Code Written By Naveen *******************
+
+		onPressBack: function (oEvent) {
+			var oHistory, sPreviousHash;
+			oHistory = History.getInstance();
+			sPreviousHash = oHistory.getPreviousHash();
+
+			if (sPreviousHash !== undefined) {
+				window.history.go(-1);
+			} else {
+				var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+				oRouter.navTo("homeview");
+			}
+
 		}
 
 	});
