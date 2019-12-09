@@ -1,1 +1,11 @@
 /* Enter your custom styles here */
+
+
+/*<! ----- Bullet List In Card Home Page   ---------->*/
+
+.bulletlist {
+    display: list-item;
+    list-style-type: disc;
+    list-style-position: outside;
+    margin-left: 20px;
+}
