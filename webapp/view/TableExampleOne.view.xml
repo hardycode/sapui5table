@@ -1,10 +1,49 @@
-<mvc:View controllerName="com.hardy.sapui5table.controller.TableExampleOne" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+<mvc:View controllerName="com.hardy.sapui5table.controller.TableExampleOne" xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+	xmlns:core="sap.ui.core" xmlns="sap.m">
 	<Shell id="shell">
 		<App id="app">
 			<pages>
 				<Page id="page" title="{i18n>title}">
 					<content>
-						<Text text="Welcome to Hardy Code"/>
+						<Table id="table1" growing="true" growingThreshold="10" mode="MultiSelect" items="{/}">
+							<headerToolbar>
+								<OverflowToolbar>
+									<content>
+										<ToolbarSpacer/>
+										<Button text="Select Items" press="onPressItem"/>
+										<Button text="Select Quanity" press="onPressQuantity"/>
+									</content>
+								</OverflowToolbar>
+							</headerToolbar>
+							<columns>
+								<Column>
+									<Text text="Item name"/>
+								</Column>
+								<Column>
+									<Text text="Quantity"/>
+								</Column>
+							</columns>
+							<items>
+								<ColumnListItem type="Active">
+									<cells>
+										<Text text="{itemName}"/>
+										<Text text="{itemQuantity}"/>
+									</cells>
+								</ColumnListItem>
+							</items>
+						</Table>
+						<Input id="productInput" class="sapUiLargeMarginEnd" width="30%" type="Text" placeholder="Enter Product ..." showSuggestion="true"
+							showValueHelp="true" valueHelpRequest="handleValueHelp" suggestionItems="{/}">
+							<suggestionItems>
+								<core:Item text="{itemName}"/>
+							</suggestionItems>
+						</Input>
+						<Input id="productInput1" width="30%" type="Text" placeholder="Enter Product ..." showSuggestion="true" showValueHelp="true"
+							valueHelpRequest="handleValueHelp" suggestionItems="{/}">
+							<suggestionItems>
+								<core:Item text="{itemQuantity}"/>
+							</suggestionItems>
+						</Input>
 					</content>
 				</Page>
 			</pages>
