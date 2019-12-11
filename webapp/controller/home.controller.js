@@ -1,9 +1,9 @@
 sap.ui.define([
-	"sap/ui/core/mvc/Controller"
-], function (Controller) {
+	"com/hardy/sapui5table/controller/BaseController"
+], function (BaseController) {
 	"use strict";
 
-	return Controller.extend("com.hardy.sapui5table.controller.home", {
+	return BaseController.extend("com.hardy.sapui5table.controller.home", {
 
 		/**
 		 * Called when a controller is instantiated and its View controls (if available) are already created.
@@ -17,7 +17,7 @@ sap.ui.define([
 		onNavToTable: function () {
 			var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
 			oRouter.navTo("RouteTableExampleOne");
-		}
+		},
 
 		/**
 		 * Similar to onAfterRendering, but this hook is invoked before the controller's View is re-rendered

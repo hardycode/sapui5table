@@ -5,7 +5,7 @@
 			<pages>
 				<Page id="page" title="{i18n>tblexmptitle}" class="sapUiContentPadding" titleLevel="H3" showNavButton="true" navButtonPress="onPressBack">
 					<headerContent>
-						<Button icon="sap-icon://home"></Button>
+						<Button icon="sap-icon://home" press="navToHome"></Button>
 					</headerContent>
 					<content>
 						<Table id="table1" growing="true" growingThreshold="10" mode="MultiSelect" items="{/}">

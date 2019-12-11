@@ -8,10 +8,10 @@
 						<Button icon="sap-icon://home"></Button>
 					</headerContent>
 					<content>
-						<!--<Button press="onNavToTable" text="Navigation"></Button>-->
-						<f:Card class="sapUiMediumMargin" width="300px">
+						<f:Card class="sapUiSmallMargin" width="300px">
 							<f:header>
-								<card:Header title="SAPUI5 Table Examples" subtitle="Click on the below button to access the course" iconSrc="sap-icon://table-view"/>
+								<card:Header title="SAPUI5 Table Examples" subtitle="Click on the Interested button to access demo application"
+									iconSrc="sap-icon://table-view"/>
 							</f:header>
 							<f:content>
 								<VBox height="115px" class="sapUiSmallMargin" justifyContent="SpaceBetween">

@@ -1,10 +1,10 @@
 sap.ui.define([
-	"sap/ui/core/mvc/Controller",
-	"sap/ui/core/routing/History"
-], function (Controller, History) {
+	"com/hardy/sapui5table/controller/BaseController",
+
+], function (BaseController) {
 	"use strict";
 
-	return Controller.extend("com.hardy.sapui5table.controller.TableExampleOne", {
+	return BaseController.extend("com.hardy.sapui5table.controller.TableExampleOne", {
 		onInit: function () {
 			var items = [{
 				"itemName": "Samsung",
@@ -68,22 +68,6 @@ sap.ui.define([
 			);
 			evt.getSource().getBinding("items").filter([oFilter]);
 		},
-
-		// ********************** Code Written By Naveen *******************
-
-		onPressBack: function (oEvent) {
-			var oHistory, sPreviousHash;
-			oHistory = History.getInstance();
-			sPreviousHash = oHistory.getPreviousHash();
-
-			if (sPreviousHash !== undefined) {
-				window.history.go(-1);
-			} else {
-				var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
-				oRouter.navTo("homeview");
-			}
-
-		}
 
 	});
 });
