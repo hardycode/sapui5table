@@ -1,11 +1,31 @@
 /* Enter your custom styles here */
 
 
-/*<! ----- Bullet List In Card Home Page   ---------->*/
+/*<! ----- Home Page Custom CSS   ---------->*/
 
 .bulletlist {
     display: list-item;
     list-style-type: disc;
     list-style-position: outside;
     margin-left: 20px;
+}
+
+.sapFCard .sapFCardHeader {
+    background-color: #0f1a4a !important;
+}
+
+.sapFCard .sapFCardHeader .sapFCardHeaderText {
+    color: #ffffff !important;
+}
+
+.sapFCard .sapFCardHeader .sapFCardHeaderText .sapFCardTitle {
+    color: #ffffff !important;
+}
+
+.sapFCard .sapFCardHeader .sapFCardSubtitle {
+    color: #ffffff !important;
+}
+
+.sapFCard .sapFCardHeader .sapFCardIcon.sapFAvatar .sapUiIcon {
+    color: #ffffff !important;
 }
