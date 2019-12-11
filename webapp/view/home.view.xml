@@ -1,5 +1,5 @@
 <mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="com.hardy.sapui5table.controller.home"
-	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:f="sap.f" xmlns:card="sap.f.cards">
+	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:f="sap.f" xmlns:card="sap.f.cards" xmlns:l="sap.ui.layout">
 	<Shell id="shell1">
 		<App id="app">
 			<pages>
@@ -8,24 +8,122 @@
 						<Button icon="sap-icon://home"></Button>
 					</headerContent>
 					<content>
-						<f:Card class="sapUiSmallMargin" width="300px">
-							<f:header>
-								<card:Header title="SAPUI5 Table Examples" subtitle="Click on the Interested button to access demo application"
-									iconSrc="sap-icon://table-view"/>
-							</f:header>
-							<f:content>
-								<VBox height="115px" class="sapUiSmallMargin" justifyContent="SpaceBetween">
-									<VBox justifyContent="SpaceBetween">
-										<Text text="SAPUI5 Tables" class="bulletlist"/>
-										<Text text="Github code sample link" class="bulletlist"/>
-										<Text text="Select rows of sapui5 table based on user selection type" class="bulletlist"/>
-									</VBox>
-									<HBox justifyContent="SpaceBetween">
-										<Button text="Interested" press="onNavToTable" type="Emphasized"/>
-									</HBox>
-								</VBox>
-							</f:content>
-						</f:Card>
+						<l:Grid defaultSpan="L4 M6 S12">
+							<l:content>
+								<!--############## 1st Card ##############-->
+								<f:Card class="sapUiResponsiveMargin" width="300px">
+									<f:header >
+										<card:Header class="cardHeaderBackground" title="SAPUI5 Table Examples" subtitle="Click on the Interested button to access demo application"
+											iconSrc="sap-icon://table-view"/>
+									</f:header>
+									<f:content>
+										<VBox height="115px" class="sapUiSmallMargin" justifyContent="SpaceBetween">
+											<VBox justifyContent="SpaceBetween">
+												<Text text="SAPUI5 Tables" class="bulletlist"/>
+												<Text text="Select rows of sapui5 table based on user selection type" class="bulletlist"/>
+												<Link text="Github code sample" target="_blank" class="bulletlist" href="http://www.github.com"/>
+											</VBox>
+											<HBox justifyContent="SpaceBetween">
+												<Button text="Interested" press="onNavToTable" type="Emphasized"/>
+											</HBox>
+										</VBox>
+									</f:content>
+								</f:Card>
+								<!--############## 2th Card ##############-->
+								<f:Card class="sapUiResponsiveMargin" width="300px">
+									<f:header>
+										<card:Header title="SAPUI5 Semantic Page" subtitle="Click on the Interested button to access demo application"
+											iconSrc="sap-icon://screen-split-one"/>
+									</f:header>
+									<f:content>
+										<VBox height="115px" class="sapUiSmallMargin" justifyContent="SpaceBetween">
+											<VBox justifyContent="SpaceBetween">
+												<Text text="SAPUI5 Semantic Page" class="bulletlist"/>
+												<Text text="Master Detail Page in a single view" class="bulletlist"/>
+												<Link text="Github code sample" target="_blank" class="bulletlist" href="http://www.github.com"/>
+											</VBox>
+											<HBox justifyContent="SpaceBetween">
+												<Button text="Interested" press="onNavToTable" type="Emphasized"/>
+											</HBox>
+										</VBox>
+									</f:content>
+								</f:Card>
+								<!--############## 3th Card ##############-->
+								<f:Card class="sapUiResponsiveMargin" width="300px">
+									<f:header>
+										<card:Header title="SAPUI5 List Example" subtitle="Click on the Interested button to access demo application" iconSrc="sap-icon://filter"/>
+									</f:header>
+									<f:content>
+										<VBox height="115px" class="sapUiSmallMargin" justifyContent="SpaceBetween">
+											<VBox justifyContent="SpaceBetween">
+												<Text text="SAPUI5 List" class="bulletlist"/>
+												<Text text="Data filtering in sap.m.list" class="bulletlist"/>
+												<Link text="Github code sample" target="_blank" class="bulletlist" href="http://www.github.com"/>
+											</VBox>
+											<HBox justifyContent="SpaceBetween">
+												<Button text="Interested" press="onNavToTable" type="Emphasized"/>
+											</HBox>
+										</VBox>
+									</f:content>
+								</f:Card>
+								<!--############## 4th Card ##############-->
+								<f:Card class="sapUiResponsiveMargin" width="300px">
+									<f:header>
+										<card:Header title="SAPUI5 Fragment Example" subtitle="Click on the Interested button to access demo application"
+											iconSrc="sap-icon://ui-notifications"/>
+									</f:header>
+									<f:content>
+										<VBox height="115px" class="sapUiSmallMargin" justifyContent="SpaceBetween">
+											<VBox justifyContent="SpaceBetween">
+												<Text text="SAPUI5 Fragment" class="bulletlist"/>
+												<Text text="Data binding in fragments" class="bulletlist"/>
+												<Link text="Github code sample" target="_blank" class="bulletlist" href="http://www.github.com"/>
+											</VBox>
+											<HBox justifyContent="SpaceBetween">
+												<Button text="Interested" press="onNavToTable" type="Emphasized"/>
+											</HBox>
+										</VBox>
+									</f:content>
+								</f:Card>
+								<!--############## 5th Card ##############-->
+								<f:Card class="sapUiResponsiveMargin" width="300px">
+									<f:header>
+										<card:Header title="SAPUI5 Grid Example" subtitle="Click on the Interested button to access demo application" iconSrc="sap-icon://grid"/>
+									</f:header>
+									<f:content>
+										<VBox height="115px" class="sapUiSmallMargin" justifyContent="SpaceBetween">
+											<VBox justifyContent="SpaceBetween">
+												<Text text="SAPUI5 Grid" class="bulletlist"/>
+												<Text text="Perfect alignment of the sapui5 controls" class="bulletlist"/>
+												<Link text="Github code sample" target="_blank" class="bulletlist" href="http://www.github.com"/>
+											</VBox>
+											<HBox justifyContent="SpaceBetween">
+												<Button text="Interested" press="onNavToTable" type="Emphasized"/>
+											</HBox>
+										</VBox>
+									</f:content>
+								</f:Card>
+								<!--############## 6th Card ##############-->
+								<f:Card class="sapUiResponsiveMargin" width="300px">
+									<f:header>
+										<card:Header title="SAPUI5 Charts" subtitle="Click on the Interested button to access demo application"
+											iconSrc="sap-icon://business-objects-experience"/>
+									</f:header>
+									<f:content>
+										<VBox height="115px" class="sapUiSmallMargin" justifyContent="SpaceBetween">
+											<VBox justifyContent="SpaceBetween">
+												<Text text="SAPUI5 List" class="bulletlist"/>
+												<Text text="Data display in different chart forms" class="bulletlist"/>
+												<Link text="Github code sample" target="_blank" class="bulletlist" href="http://www.github.com"/>
+											</VBox>
+											<HBox justifyContent="SpaceBetween">
+												<Button text="Interested" press="onNavToTable" type="Emphasized"/>
+											</HBox>
+										</VBox>
+									</f:content>
+								</f:Card>
+							</l:content>
+						</l:Grid>
 					</content>
 				</Page>
 			</pages>
