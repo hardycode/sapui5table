@@ -39,7 +39,7 @@
 							<CheckBox selected="{/twowaybinding/enabled}" text="Enabled"/>
 							<Text text="{/twowaybinding/explanation}"/>
 							<VBox class="sapUiSmallMarginTop">
-								<Label text="Two things are happening here:"/>
+								<Label text="{i18n>labeltext}"/>
 								<Text text="{/twowaybinding/keypointone}" class="bulletlist"/>
 								<Text text="{/twowaybinding/keypointtwo}" class="bulletlist"/>
 							</VBox>
@@ -54,7 +54,7 @@
 						<content>
 							<Label text="First Name" class="sapUiSmallMargin"></Label>
 							<Input value="{/onewaybinding/firstName}" valueLiveUpdate="true" width="200px" enabled="{/onewaybinding/enabled}"/>
-							<Label text="{i18n>lastname}" class="sapUiSmallMargin"/>
+							<Label text="Last Name" class="sapUiSmallMargin"/>
 							<Input value="{/onewaybinding/lastName}" valueLiveUpdate="true" width="200px" enabled="{/onewaybinding/enabled}"/>
 							<CheckBox selected="{/onewaybinding/enabled}" text="Enabled"/>
 							<Text text="{/onewaybinding/explanation}"/>

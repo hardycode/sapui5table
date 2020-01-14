@@ -7,7 +7,7 @@
  */
 var fiori_client_appConfig = {
 	"appName": "sapui5table",
-	"appVersion": "1.0",
+	"appVersion": "1.1",
 	"appID": "com.sap.webide.x6eae1704f59b457892513b03a87f1b6b",
 	"fioriURL": "https://hcpms-p2000948240trial.hanatrial.ondemand.com:443",
 	"auth": [
