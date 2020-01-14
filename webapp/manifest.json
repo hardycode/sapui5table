@@ -76,12 +76,12 @@
 				"clearControlAggregation": false
 			},
 			"routes": [
-					{
+				{
 					"name": "homeview",
 					"pattern": "home",
 					"target": [
 						"tohome"
-						]
+					]
 				},
 				{
 					"name": "RouteTableExampleOne",
@@ -89,12 +89,17 @@
 					"target": [
 						"TargetTableExampleOne"
 					]
+				},
+				{
+					"name": "gridbinding",
+					"pattern": "databinding",
+					"target": [
+						"Griddatabinding"
+						]
 				}
-			
 			],
 			"targets": {
-				
-					"tohome": {
+				"tohome": {
 					"viewType": "XML",
 					"viewName": "home"
 				},
@@ -104,8 +109,11 @@
 					"clearControlAggregation": false,
 					"viewId": "TableExampleOne1",
 					"viewName": "TableExampleOne"
+				},
+				"Griddatabinding": {
+					"viewType": "XML",
+					"viewName": "Griddatabinding"
 				}
-			
 			}
 		}
 	}

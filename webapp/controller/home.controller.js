@@ -11,6 +11,9 @@ sap.ui.define([
 		 * @memberOf com.hardy.sapui5table.view.home
 		 */
 		onInit: function () {
+			if (sap.ui.Device.system.phone || sap.ui.Device.system.tablet) {
+				this.getView().byId("homePage").setEnableScrolling(true);
+			}
 
 		},
 
@@ -18,6 +21,13 @@ sap.ui.define([
 			var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
 			oRouter.navTo("RouteTableExampleOne");
 		},
+
+		// Navigate to Grid & Binding View
+
+		onNavToBinding: function () {
+			var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+			oRouter.navTo("gridbinding");
+		}
 
 		/**
 		 * Similar to onAfterRendering, but this hook is invoked before the controller's View is re-rendered

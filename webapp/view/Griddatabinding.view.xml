@@ -1,0 +1,72 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="com.hardy.sapui5table.controller.Griddatabinding" xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="Data Binding With Grid Alignment" enableScrolling="true" id="bindingpage" class="sapUiResponsiveContentPadding pageHeader"
+				titleLevel="H3" showNavButton="true" navButtonPress="onPressBack">
+				<headerContent>
+					<Button icon="sap-icon://home" class="barIcon" press="navToHome"></Button>
+				</headerContent>
+				<content>
+					<Panel expandable="true" expanded="true" width="auto" class="sapUiResponsiveMargin">
+						<headerToolbar>
+							<OverflowToolbar height="3rem" style="Clear">
+								<Title text="{/title}"/>
+								<ToolbarSpacer/>
+								<Button icon="sap-icon://settings"/>
+								<Button icon="sap-icon://drop-down-list"/>
+							</OverflowToolbar>
+						</headerToolbar>
+						<content>
+							<Text text="{/definition}"/>
+							<VBox class="sapUiSmallMarginTop">
+								<Label text="{/absolute/title}"></Label>
+								<Text text="{/absolute/definition}"/>
+							</VBox>
+						</content>
+					</Panel>
+					<Panel expandable="true" id="twowaybindingPanel" expanded="false" width="auto" class="sapUiResponsiveMargin">
+						<headerToolbar>
+							<OverflowToolbar >
+								<Title text="{/twowaybinding/title}"/>
+							</OverflowToolbar>
+						</headerToolbar>
+						<content>
+							<Label text="First Name" class="sapUiSmallMargin"></Label>
+							<Input value="{/twowaybinding/firstName}" valueLiveUpdate="true" width="200px" enabled="{/twowaybinding/enabled}"/>
+							<Label text="Last Name" class="sapUiSmallMargin"/>
+							<Input value="{/twowaybinding/lastName}" valueLiveUpdate="true" width="200px" enabled="{/twowaybinding/enabled}"/>
+							<CheckBox selected="{/twowaybinding/enabled}" text="Enabled"/>
+							<Text text="{/twowaybinding/explanation}"/>
+							<VBox class="sapUiSmallMarginTop">
+								<Label text="Two things are happening here:"/>
+								<Text text="{/twowaybinding/keypointone}" class="bulletlist"/>
+								<Text text="{/twowaybinding/keypointtwo}" class="bulletlist"/>
+							</VBox>
+						</content>
+					</Panel>
+					<Panel expandable="true" id="onewaybindingPanel" expanded="false" width="auto" class="sapUiResponsiveMargin">
+						<headerToolbar>
+							<OverflowToolbar >
+								<Title text="{/onewaybinding/title}"/>
+							</OverflowToolbar>
+						</headerToolbar>
+						<content>
+							<Label text="First Name" class="sapUiSmallMargin"></Label>
+							<Input value="{/onewaybinding/firstName}" valueLiveUpdate="true" width="200px" enabled="{/onewaybinding/enabled}"/>
+							<Label text="Last Name" class="sapUiSmallMargin"/>
+							<Input value="{/onewaybinding/lastName}" valueLiveUpdate="true" width="200px" enabled="{/onewaybinding/enabled}"/>
+							<CheckBox selected="{/onewaybinding/enabled}" text="Enabled"/>
+							<Text text="{/onewaybinding/explanation}"/>
+							<VBox class="sapUiSmallMarginTop">
+								<Label text="Two Key Points"/>
+								<Text text="{/onewaybinding/keypointone}" class="bulletlist"/>
+								<Text text="{/onewaybinding/keypointtwo}" class="bulletlist"/>
+							</VBox>
+						</content>
+					</Panel>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

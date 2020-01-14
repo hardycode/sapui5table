@@ -10,8 +10,42 @@
     margin-left: 20px;
 }
 
+.pageHeader .sapMPageHeader {
+    background-color: #434648 !important;
+}
+
+
+/* Page Navigation Back Button */
+
+.sapMBtnBack .sapMBtnIcon {
+    color: #ffffff !important;
+}
+
+.sapMBtnBack .sapMBtnIcon:hover {
+    color: #f3f20a !important;
+    background-color: #434648 !important;
+    border-color: #434648 !important;
+}
+
+
+/* Home Button */
+
+.sapMBtn .sapMBtnIcon:hover {
+    color: #f3f20a !important;
+    background-color: #434648 !important;
+    border-color: #434648 !important;
+}
+
+.pageHeader .sapMIBar-CTX .sapMTitle {
+    color: #ffffff !important;
+}
+
+.barIcon .sapMBtnIcon {
+    color: #ffffff !important;
+}
+
 .sapFCard .sapFCardHeader {
-    background-color: #0f1a4a !important;
+    background-color: #434648 !important;
 }
 
 .sapFCard .sapFCardHeader .sapFCardHeaderText {
