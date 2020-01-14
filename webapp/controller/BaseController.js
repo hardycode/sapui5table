@@ -9,6 +9,9 @@ sap.ui.define([
 
 		// ********************** Code Written By Naveen *******************
 		// ******* Navigate To Previous View *********
+		onInit: function () {
+
+		},
 		onPressBack: function (oEvent) {
 			var oHistory, sPreviousHash;
 			oHistory = History.getInstance();
@@ -24,6 +27,7 @@ sap.ui.define([
 		},
 
 		navToHome: function () {
+
 			var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
 			oRouter.navTo("homeview");
 		}
