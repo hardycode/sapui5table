@@ -32,7 +32,7 @@
 							</OverflowToolbar>
 						</headerToolbar>
 						<content>
-							<Label text="First Name" class="sapUiSmallMargin"></Label>
+							<Label text="{i18n>firstname}" class="sapUiSmallMargin"></Label>
 							<Input value="{/twowaybinding/firstName}" valueLiveUpdate="true" width="200px" enabled="{/twowaybinding/enabled}"/>
 							<Label text="Last Name" class="sapUiSmallMargin"/>
 							<Input value="{/twowaybinding/lastName}" valueLiveUpdate="true" width="200px" enabled="{/twowaybinding/enabled}"/>
