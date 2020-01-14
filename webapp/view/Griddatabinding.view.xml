@@ -34,7 +34,7 @@
 						<content>
 							<Label text="{i18n>firstname}" class="sapUiSmallMargin"></Label>
 							<Input value="{/twowaybinding/firstName}" valueLiveUpdate="true" width="200px" enabled="{/twowaybinding/enabled}"/>
-							<Label text="Last Name" class="sapUiSmallMargin"/>
+							<Label text="{i18n>}" class="sapUiSmallMargin"/>
 							<Input value="{/twowaybinding/lastName}" valueLiveUpdate="true" width="200px" enabled="{/twowaybinding/enabled}"/>
 							<CheckBox selected="{/twowaybinding/enabled}" text="Enabled"/>
 							<Text text="{/twowaybinding/explanation}"/>
